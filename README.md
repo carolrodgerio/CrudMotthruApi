@@ -1,10 +1,10 @@
 # CRUD Motthru API - Sprint 3 (Challenge FIAP)
 
-[cite_start]Este projeto consiste em uma API REST para gerenciamento de motos, desenvolvida em .NET 8 [cite: 3] e implantada na nuvem Azure utilizando uma arquitetura de contêineres e serviços gerenciados (PaaS).
+Este projeto consiste em uma API REST para gerenciamento de motos, desenvolvida em .NET 8 e implantada na nuvem Azure utilizando uma arquitetura de contêineres e serviços gerenciados (PaaS).
 
 ## 1. Descrição da Solução
 
-Esta API serve como um backend para um sistema de gerenciamento dos pátios da Mottu, empresa de aluguel de motos. [cite_start]Ela permite a realização de operações de CRUD (Criar, Ler, Atualizar e Deletar) para registros de motos, centralizando informações essenciais como placa, chassi e localização (pátio)[cite: 7]. A aplicação é construída com uma abordagem minimalista e moderna usando .NET 8.
+Esta API serve como um backend para um sistema de gerenciamento dos pátios da Mottu, empresa de aluguel de motos. Ela permite a realização de operações de CRUD (Criar, Ler, Atualizar e Deletar) para registros de motos, centralizando informações essenciais como placa, chassi e localização (pátio). A aplicação é construída com uma abordagem minimalista e moderna usando .NET 8.
 
 ## 2. Benefícios para o Negócio
 
@@ -17,7 +17,7 @@ Esta API serve como um backend para um sistema de gerenciamento dos pátios da M
 
 A arquitetura implantada no Azure consiste nos seguintes componentes:
 
-* **Azure Database for PostgreSQL:** Um serviço de banco de dados como serviço (PaaS) que armazena os dados da aplicação. [cite_start]Ele é responsável pela persistência dos registros de motos[cite: 2, 5].
+* **Azure Database for PostgreSQL:** Um serviço de banco de dados como serviço (PaaS) que armazena os dados da aplicação. Ele é responsável pela persistência dos registros de motos.
 * **Azure Container Registry (ACR):** Um registro Docker privado e gerenciado no Azure. Ele armazena de forma segura a imagem Docker da nossa aplicação após o processo de build.
 * **Azure Container Instances (ACI):** Um serviço que executa contêineres Docker sob demanda sem a necessidade de gerenciar máquinas virtuais. Ele é responsável por executar nossa API, tornando-a acessível pela internet.
 
