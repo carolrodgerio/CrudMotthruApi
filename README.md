@@ -99,3 +99,62 @@ curl -X PUT "<URL_DA_SUA_API>/motos/1" \
 # Exemplo para deletar a moto com id = 1
 curl -X DELETE "<URL_DA_SUA_API>/motos/1"
 ```
+
+---
+
+## 6. Conectando-se ao Banco de Dados na Nuvem
+
+Após o deploy, você pode querer verificar os dados diretamente no banco de dados PostgreSQL para depuração ou para a demonstração. Abaixo estão as instruções para se conectar usando diferentes ferramentas.
+
+### Pré-requisito Essencial: Liberar seu IP no Firewall
+
+Por padrão, o banco de dados no Azure bloqueia conexões de IPs desconhecidos. Para se conectar da sua máquina local, você precisa adicionar uma regra de firewall.
+Execute o comando abaixo no PowerShell (substituindo <SEU_IP_PUBLICO_AQUI> pelo seu IP):
+
+```powershell
+# Use as mesmas variáveis do seu script de deploy
+$resourceGroupName="<NOME DO RG>"
+$postgresServerName="<NOME DO SERVER DB>"
+
+az postgres flexible-server firewall-rule create `
+    --resource-group $resourceGroupName `
+    --name $postgresServerName `
+    --rule-name "AllowMyLocalIP" `
+    --start-ip-address "<SEU_IP_PUBLICO_AQUI>" `
+    --end-ip-address "<SEU_IP_PUBLICO_AQUI>"
+```
+
+**Método 1: DBeaver**
+- Crie uma nova conexão e selecione PostgreSQL.
+- Preencha os parâmetros "Host", "Database", "Username" e "Password":
+- Na aba SSL, marque a opção "Use SSL" e configure o "SSL Mode" para require.
+- Teste a conexão e salve.
+
+**Método 2: VS Code**
+- Instale a extensão PostgreSQL da Microsoft.
+- Clique no ícone da extensão na barra lateral e em "+" para adicionar uma nova conexão.
+- Preencha os mesmos parâmetros listados para o DBeaver.
+- Quando solicitado, selecione a opção de SSL Require.
+
+**Método 3: Linha de Comando (psql)**
+- Certifique-se de ter o cliente psql do PostgreSQL instalado em sua máquina.
+- Execute o seguinte comando no PowerShell. Ele utilizará a CLI do Azure para facilitar a conexão:
+
+```powershell
+az postgres flexible-server connect `
+    --name "<NOME DO SERVER DB>" `
+    --admin-user "<NOME DO USUÁRIO>" `
+    --database-name "motodb"
+```
+
+- Digite a senha quando solicitado.
+- Após conectar, você pode executar queries SQL diretamente, como SELECT * FROM motos;. Para sair, digite \q.
+
+---
+
+## Materiais Complementares
+
+- Vídeo no YouTube: 
+- Apresentação em PDF:
+
+_Feito com 🩷 por Carolina, Enrico e Lucas_
