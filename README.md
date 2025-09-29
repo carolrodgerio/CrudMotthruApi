@@ -1,5 +1,7 @@
 # CRUD Motthru API - Sprint 3 (Challenge FIAP)
 
+![Banner](assets/banner.png)
+
 Este projeto consiste em uma API REST para gerenciamento de motos, desenvolvida em .NET 8 e implantada na nuvem Azure utilizando uma arquitetura de contêineres e serviços gerenciados (PaaS).
 
 ## 1. Descrição da Solução
