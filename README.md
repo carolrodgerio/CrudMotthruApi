@@ -23,6 +23,8 @@ A arquitetura implantada no Azure consiste nos seguintes componentes:
 
 O fluxo de implantação é automatizado via script, seguindo as melhores práticas de DevOps: `Código Local -> Build da Imagem Docker -> Push para o ACR -> Deploy no ACI`.
 
+![Diagrama da Arquitetura](assets/arquitetura.png)
+
 ---
 
 ## 4. Guia de Implantação Automatizada
