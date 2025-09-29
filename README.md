@@ -161,4 +161,4 @@ az postgres flexible-server connect `
 - Vídeo no YouTube: 
 - Apresentação em PDF:
 
-_Feito com 🩷 por [Carolina](https://github.com/carolrodgerio), [Enrico](https://github.com/Enrico-AD) e [Lucas](https://github.com/lucasthalless)_
+_Feito com 💚 por [Carolina](https://github.com/carolrodgerio), [Enrico](https://github.com/Enrico-AD) e [Lucas](https://github.com/lucasthalless)_
