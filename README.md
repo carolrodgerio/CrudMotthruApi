@@ -148,7 +148,7 @@ az postgres flexible-server connect `
 ```
 
 - Digite a senha quando solicitado.
-- Após conectar, você pode executar queries SQL diretamente, como SELECT * FROM motos;. Para sair, digite \q.
+- Após conectar, você pode executar queries SQL diretamente, como `SELECT * FROM motos;`. Para sair, digite `\q`.
 
 ---
 
@@ -157,4 +157,4 @@ az postgres flexible-server connect `
 - Vídeo no YouTube: 
 - Apresentação em PDF:
 
-_Feito com 🩷 por Carolina, Enrico e Lucas_
+_Feito com 🩷 por [Carolina](https://github.com/carolrodgerio), [Enrico](https://github.com/Enrico-AD) e [Lucas](https://github.com/lucasthalless)_
