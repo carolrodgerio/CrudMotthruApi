@@ -38,8 +38,8 @@ Este projeto utiliza um script PowerShell único para provisionar toda a infraes
 
 1.  **Clone o Repositório**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO_AQUI>
-    cd <PASTA_DO_PROJETO>
+    git clone https://github.com/carolrodgerio/CrudMotthruApi
+    cd CrudMotthruAPI
     ```
 
 2.  **Configure o Script de Deploy**
