@@ -158,7 +158,6 @@ az postgres flexible-server connect `
 
 ## Materiais Complementares
 
-- Vídeo no YouTube: 
-- Apresentação em PDF:
+- Vídeo no YouTube: https://youtu.be/ffDBshLEkWo?si=VdlWPVhzjCBMQVd0
 
 _Feito com 💚 por [Carolina](https://github.com/carolrodgerio), [Enrico](https://github.com/Enrico-AD) e [Lucas](https://github.com/lucasthalless)_
